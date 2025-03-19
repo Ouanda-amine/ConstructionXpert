@@ -1,4 +1,4 @@
-<%--
+<%@ page import="org.example.constructionxpert.Model.Projet" %><%--
   Created by IntelliJ IDEA.
   User: amine
   Date: 17/03/2025
@@ -9,13 +9,17 @@
 <html>
 <head>
     <title>Title</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
 
 <div class="container my-5">
     <div class="card-body">
         <h2 class="card-title text-center mb-4">ajouter un projet</h2>
-        <form action="projet" method="post">
+        <form action="tache" method="post">
+            <input type="hidden" name="action" value="createAndAssign">
+            <input type="hidden" name="idpro" value="<%= ((Projet) request.getAttribute("projet")).getIdpro() %>">
 
             <div class="mb-3">
                 <label for="desc" class="form-label">Description</label>
@@ -29,12 +33,9 @@
                 <label for="datefin" class="form-label">Date de fin</label>
                 <input type="date" class="form-control" id="datefin" name="datefin">
             </div>
+
             <div class="mb-3">
-                <label for="budget" class="form-label">Description</label>
-                <input type="number" class="form-control" id="budget" name="budget">
-            </div>
-            <div class="mb-3">
-                <button type="submit" class="btn btn-primary" onclick="window.location.href='StudentList.jsp'">Ajouter</button>
+                <button type="submit" class="btn btn-primary" >Ajouter</button>
             </div>
         </form>
     </div>

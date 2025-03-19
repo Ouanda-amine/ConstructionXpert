@@ -35,7 +35,7 @@
                 <input type="date" class="form-control" id="datefin" name="datefin">
             </div>
             <div class="mb-3">
-                <label for="budget" class="form-label">Description</label>
+                <label for="budget" class="form-label">Budget de projet</label>
                 <input type="number" class="form-control" id="budget" name="budget">
             </div>
             <div class="mb-3">

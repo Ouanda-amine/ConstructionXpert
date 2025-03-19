@@ -39,8 +39,22 @@
             <p> jusqu'a </p>
             <p><%=projet.getDatefin()%></p>
         </div>
-        <a href="projet?action=edit&id=<%= projet.getIdpro()%>" class="btn btn-warning btn-sm">Edit</a>
-        <a href="projet?action=delete&id=<%= projet.getIdpro() %>" class="btn btn-danger btn-sm">Delete</a>
+
+        <div class="row" style="justify-content: space-between ; width: 300px ; margin-top: 40px ">
+            <div>
+                <a href="projet?action=edit&id=<%= projet.getIdpro()%>" class="btn btn-warning btn-sm">Edit</a>
+                <a href="projet?action=delete&id=<%= projet.getIdpro() %>" class="btn btn-danger btn-sm">Delete</a>
+
+            </div>
+            <div>
+                <a href="tache?action=createForm&id=<%= projet.getIdpro()%>" class="btn btn-primary btn-sm">ADD TASK</a>
+                <a href="tache?action=tachesByProjet&idpro=<%= projet.getIdpro() %>" class="btn btn-primary btn-sm">LIST OF TASKS</a>
+
+
+
+            </div>
+        </div>
+
     </div>
 
     <% } %>
