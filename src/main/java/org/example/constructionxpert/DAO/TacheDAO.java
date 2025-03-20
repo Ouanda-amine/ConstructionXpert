@@ -101,17 +101,29 @@ public class TacheDAO {
         }
     }
 
-    public  void deletetache(int id) {
-        String sql = "DELETE FROM tache WHERE idtache = ?";
-        try (PreparedStatement pres = con.prepareStatement(sql)){
-            pres.setInt(1,id);
-            pres.executeUpdate();
-
+    public void deletetache(int id) {
+        // Delete references in tacheress first
+        String deleteTacheressSql = "DELETE FROM tacheress WHERE idtache = ?";
+        try (PreparedStatement presTacheress = con.prepareStatement(deleteTacheressSql)) {
+            presTacheress.setInt(1, id);
+            presTacheress.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
-            System.out.println("tache not founddd");
+            System.out.println("Failed to delete references in tacheress.");
+        }
+
+        // Now delete the task
+        String deleteTacheSql = "DELETE FROM tache WHERE idtache = ?";
+        try (PreparedStatement presTache = con.prepareStatement(deleteTacheSql)) {
+            presTache.setInt(1, id);
+            presTache.executeUpdate();
+            System.out.println("Task deleted successfully.");
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.out.println("Failed to delete task.");
         }
     }
+
 
     public void createAndAssignTache(Tache tache) {
         String sql = "INSERT INTO tache (description, datedebut, datefin, idpro) VALUES (?, ?, ?, ?)";

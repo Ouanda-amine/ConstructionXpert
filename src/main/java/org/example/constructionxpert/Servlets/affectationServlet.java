@@ -46,6 +46,9 @@ public class affectationServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int tacheId = Integer.parseInt(request.getParameter("tachid"));
         int resid = Integer.parseInt(request.getParameter("select"));
+        int quantity = Integer.parseInt(request.getParameter("quantity"));
+
+        affectationDAO.reduireQuantiteRessource(resid, quantity);
 
         affectationDAO.assignRessourceToTache(tacheId, resid);
         response.sendRedirect(request.getContextPath() + "/projet");

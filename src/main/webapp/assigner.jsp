@@ -25,7 +25,7 @@
 
     <div class="form-group">
         <label for="select">RESSOURCES :</label>
-        <select name="select" class="form-control" id="select">
+        <select name="select" class="form-control" id="select" style="margin-bottom: 40px">
             <%
                 List<Ressources> ressourcesList = (List<Ressources>) request.getAttribute("ressourceslist");
 
@@ -36,7 +36,7 @@
                 }
             %>
         </select>
-        <input type="number" min="0" max="10" step="1" value="0" name="quantity" placeholder="Quantity">
+        <input type="number" name="quantity" placeholder="Quantity">
     </div>
     <button type="submit" class="btn btn-primary">Assigner</button>
 </form>

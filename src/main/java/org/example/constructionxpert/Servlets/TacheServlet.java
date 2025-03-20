@@ -29,10 +29,13 @@ public class TacheServlet extends HttpServlet {
             request.getRequestDispatcher("modifierTache.jsp").forward(request, response);
 
         } else if ("delete".equals(action)) {
-            int id = Integer.parseInt(request.getParameter("idtache"));
-            tacheDAO.deletetache(id);
-            response.sendRedirect(request.getContextPath() + "/tache?action=tachesByProjet&idpro=" + id);
+            int idTache = Integer.parseInt(request.getParameter("idtache"));
 
+            Tache tache = tacheDAO.gettacheBYid(idTache);
+            int idpro = tache.getIdpro();
+
+            tacheDAO.deletetache(idTache);
+            response.sendRedirect(request.getContextPath() + "/tache?action=tachesByProjet&idpro=" + idpro);
         } else if ("createForm".equals(action)) {
             int idProjet = Integer.parseInt(request.getParameter("id"));
 

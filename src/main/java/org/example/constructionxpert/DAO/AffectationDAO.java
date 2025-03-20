@@ -67,4 +67,18 @@ public class AffectationDAO {
         System.out.println("liiist");
         return ressourcesList;
     }
+
+    public void reduireQuantiteRessource(int resid, int quantiteUtilisee) {
+        String sql = "UPDATE ressources SET quantite = quantite - ? WHERE idres = ?";
+        try (PreparedStatement stmt = con.prepareStatement(sql)) {
+            stmt.setInt(1, quantiteUtilisee);
+            stmt.setInt(2, resid);
+            stmt.executeUpdate();
+            System.out.println("Quantité mise à jour pour la ressource ID : " + resid);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.out.println("Erreur lors de la mise à jour de la quantité.");
+        }
+    }
+
 }
