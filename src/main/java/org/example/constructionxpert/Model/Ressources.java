@@ -8,6 +8,15 @@ public class Ressources {
     private String nomfournisseur;
     private String localfournisseur;
 
+    public Ressources(int idres ,String nomres, String type, int quantite, String nomfournisseur, String localfournisseur) {
+        this.idres = idres;
+        this.nomres = nomres;
+        this.type = type;
+        this.quantite = quantite;
+        this.nomfournisseur = nomfournisseur;
+        this.localfournisseur = localfournisseur;
+    }
+
     public Ressources(String nomres, String type, int quantite, String nomfournisseur, String localfournisseur) {
         this.nomres = nomres;
         this.type = type;

@@ -43,6 +43,10 @@
             <td>
                 <a href="tache?action=edit&idtache=<%= tache.getIdtache() %>" class="btn btn-warning btn-sm">Edit</a>
                 <a href="tache?action=delete&idtache=<%= tache.getIdtache() %>" class="btn btn-danger btn-sm">Delete</a>
+                <a href="affectation?idtache=<%= tache.getIdtache() %>" class="btn  btn-primary">Assigner ressource</a>
+                <a href="affectation?action=affectation&idtache=<%= tache.getIdtache() %>" class="btn  btn-primary">list rres</a>
+
+
 
 
 
