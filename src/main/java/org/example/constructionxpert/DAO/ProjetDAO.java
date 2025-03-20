@@ -99,7 +99,7 @@ public class ProjetDAO {
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
-            System.out.println("tache n f ");
+            System.out.println("pro n f ");
         }
     }
 

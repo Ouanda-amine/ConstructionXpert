@@ -39,7 +39,7 @@
                 <input type="number" class="form-control" id="budget" name="budget">
             </div>
             <div class="mb-3">
-                <button type="submit" class="btn btn-primary" onclick="window.location.href='StudentList.jsp'">Ajouter</button>
+                <button type="submit" class="btn btn-primary">Ajouter</button>
             </div>
         </form>
     </div>
