@@ -82,8 +82,11 @@
                 <form action="login" method="post">
                     <label for="username" class="form-label">User Name</label>
                     <input type="text" class="form-control" id="username" name="username">
+                    <span class="help-block" style="color: red ; margin-bottom: 15px" id="msj" >champ obligatoire </span><br>
                     <label for="password" class="form-label">PassWord</label>
-                    <input type="password" class="form-control" id="password" name="password" style="margin-bottom: 30px">
+                    <input type="password" class="form-control" id="password" name="password" >
+                    <span class="help-block" style="color: red ; margin-bottom: 15px" id="msjj" >champ obligatoire </span><br>
+
                     <button type="submit" class="btn btn-primary" style="float: right ; margin-bottom: 15px">Login</button>
                 </form>
             </div>
@@ -92,6 +95,40 @@
             <img src="bg.jpg" height="500px" class="col-md-8" >
 
     </div>
+<script>
+    const usr = document.getElementById('username');
+    const psw = document.getElementById('password');
+    msj = document.getElementById('msj');
+    msjj = document.getElementById('msjj');
+
+    usr.addEventListener('input',function(){
+        if(usr.value!=='' && usr.value!==null && usr.value.length>3){
+            msj.textContent='valide';
+            msj.style.color='green';
+
+        }else{
+            msj.textContent='champ obligatoire !'
+            msj.style.color='red';
+
+
+        }
+
+    })
+    psw.addEventListener('input',function(){
+        if(psw.value!=='' && psw.value!==null && psw.value.length>2){
+            msjj.textContent='valide';
+            msjj.style.color='green';
+
+        }else{
+            msjj.textContent='champ obligatoire !'
+            msjj.style.color='red';
+
+
+        }
+
+    })
+
+</script>
 
 </body>
 </html>
