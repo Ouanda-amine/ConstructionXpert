@@ -11,6 +11,98 @@
 <head>
     <title>Title</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Default Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        .btn-sm {
+            font-size: 14px;
+        }
+
+        .btn {
+            margin: 5px 0;
+        }
+
+        th, td {
+            text-align: center;
+        }
+
+        /* Media Query for Tablets (screens up to 768px) */
+        @media only screen and (max-width: 768px) {
+            h2 {
+                font-size: 24px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            th, td {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            .btn-sm {
+                font-size: 12px;
+                padding: 5px;
+                width: 100%; /* Full-width buttons */
+            }
+
+            .row {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Media Query for Mobile Phones (screens up to 480px) */
+        @media only screen and (max-width: 480px) {
+            h2 {
+                font-size: 20px;
+            }
+
+            th, td {
+                font-size: 12px;
+                padding: 5px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            .btn-sm {
+                font-size: 10px;
+                width: 100%; /* Full-width buttons */
+            }
+
+            td {
+                word-wrap: break-word;
+            }
+
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+
 
 </head>
 <body>

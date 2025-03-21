@@ -11,6 +11,73 @@
 <head>
     <title>Title</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 90%;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        .btn {
+            margin: 5px 0;
+        }
+
+        @media only screen and (max-width: 768px) {
+            h2 {
+                font-size: 24px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            .btn {
+                font-size: 12px;
+                width: 100%;
+            }
+
+            td, th {
+                word-break: break-word;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            h2 {
+                font-size: 20px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            th, td {
+                font-size: 12px;
+                padding: 5px;
+                text-align: center;
+            }
+
+            .btn {
+                font-size: 10px;
+                width: 100%;
+            }
+        }
+    </style>
+
 
 </head>
 <body>

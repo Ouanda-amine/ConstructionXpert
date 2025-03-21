@@ -11,6 +11,88 @@
     <title>Title</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
+    <style>
+        /* Default Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 600px; /* Sets a max width for the form */
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card-body {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        button {
+            width: 100%; /* Full-width button for better usability */
+        }
+
+        /* Media Query for Tablets (screens up to 768px) */
+        @media only screen and (max-width: 768px) {
+            .container {
+                max-width: 90%; /* Reduce width for smaller screens */
+            }
+
+            .card-body {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 20px; /* Smaller text for headings */
+            }
+
+            label {
+                font-size: 14px;
+            }
+
+            input, button {
+                font-size: 14px;
+            }
+        }
+
+        /* Media Query for Mobile Phones (screens up to 480px) */
+        @media only screen and (max-width: 480px) {
+            h2 {
+                font-size: 18px;
+            }
+
+            .card-body {
+                padding: 15px;
+            }
+
+            label {
+                font-size: 12px;
+            }
+
+            input, button {
+                font-size: 12px;
+            }
+
+            button {
+                width: 100%; /* Make buttons 100% width on mobile */
+            }
+        }
+    </style>
+
+
 </head>
 <body>
 <div class="container my-5">

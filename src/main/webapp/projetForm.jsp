@@ -11,6 +11,81 @@
     <title>Title</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 600px; /* Sets a max width for the form */
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        .card-body {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        button {
+            width: 100%; /* Full-width button for better usability */
+        }
+
+        /* Media Query for Tablets (screens up to 768px) */
+        @media only screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .card-body {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            label {
+                font-size: 14px;
+            }
+
+            input, button {
+                font-size: 14px;
+            }
+        }
+
+        /* Media Query for Mobile (screens up to 480px) */
+        @media only screen and (max-width: 480px) {
+            h2 {
+                font-size: 18px;
+            }
+
+            label {
+                font-size: 12px;
+            }
+
+            input, button {
+                font-size: 12px;
+            }
+
+            .card-body {
+                padding: 10px;
+            }
+        }
+    </style>
+
+
 </head>
 <body>
 
