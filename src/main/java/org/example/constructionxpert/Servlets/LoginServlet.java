@@ -34,7 +34,7 @@ public class LoginServlet extends HttpServlet {
             HttpSession session = request.getSession();
             session.setAttribute("admin", admin);
 
-            response.sendRedirect(request.getContextPath() + "/projet");
+            response.sendRedirect(request.getContextPath() + "/home");
         } else {
             request.setAttribute("errorMessage", "Nom d'utilisateur ou mot de passe invalide.");
             request.getRequestDispatcher("login.jsp").forward(request, response);

@@ -93,6 +93,7 @@
     <div class="card-body">
         <h2 class="card-title text-center mb-4">ajouter un projet</h2>
         <form action="projet" method="post">
+            <input type="hidden" name="action" value="add">
             <div class="mb-3">
                 <label for="nom" class="form-label">Nom du projet</label>
                 <input type="text" class="form-control" id="nom" name="nompro">

@@ -76,6 +76,8 @@
     </div>
 </nav>
 
+<a href="projet?action=add" class="btn btn-primary btn-sm" style="margin-top: 20px">ADD NEW Project</a>
+
 
 
 <div class="container w-70 mt-5" style=" height: 100vh ; margin-left: 50vh">

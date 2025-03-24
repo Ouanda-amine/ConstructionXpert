@@ -30,7 +30,9 @@ public class ProjetServlet extends HttpServlet {
             response.sendRedirect(request.getContextPath() + "/projet");
 
 
-        } else{
+        }else if("add".equals(action)) {
+            request.getRequestDispatcher("projetForm.jsp").forward(request, response);
+        }else{
 
             List<Projet> projetList = projetDAO.getallProjects();
             request.setAttribute("projetlist", projetList);
@@ -61,7 +63,7 @@ public class ProjetServlet extends HttpServlet {
 
 
 
-        }else{
+        }else if("add".equals(action)) {
 
         String nom = request.getParameter("nompro");
         String description = request.getParameter("description");

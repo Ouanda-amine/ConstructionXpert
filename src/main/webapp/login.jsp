@@ -92,7 +92,7 @@
             </div>
         </div>
 
-            <img src="bg.jpg" height="500px" class="col-md-8" >
+            <img src="loginn.jpg" height="500px" class="col-md-8" >
 
     </div>
 <script>
