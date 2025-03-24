@@ -13,7 +13,6 @@
     <title>Title</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Default Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -62,7 +61,6 @@
             background-color: #0056b3;
         }
 
-        /* Media Query for Tablets (screens up to 768px) */
         @media only screen and (max-width: 768px) {
             form {
                 max-width: 90%; /* Reduce the form width for smaller screens */
@@ -82,7 +80,6 @@
             }
         }
 
-        /* Media Query for Mobile Phones (screens up to 480px) */
         @media only screen and (max-width: 480px) {
             form {
                 max-width: 100%; /* Take full width on mobile devices */

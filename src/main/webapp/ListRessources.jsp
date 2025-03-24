@@ -12,7 +12,6 @@
     <title>Title</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Default Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -46,7 +45,6 @@
             text-align: center;
         }
 
-        /* Media Query for Tablets (screens up to 768px) */
         @media only screen and (max-width: 768px) {
             h2 {
                 font-size: 24px;
@@ -64,7 +62,7 @@
             .btn-sm {
                 font-size: 12px;
                 padding: 5px;
-                width: 100%; /* Full-width buttons */
+                width: 100%;
             }
 
             .row {
@@ -73,7 +71,6 @@
             }
         }
 
-        /* Media Query for Mobile Phones (screens up to 480px) */
         @media only screen and (max-width: 480px) {
             h2 {
                 font-size: 20px;
@@ -90,7 +87,7 @@
 
             .btn-sm {
                 font-size: 10px;
-                width: 100%; /* Full-width buttons */
+                width: 100%;
             }
 
             td {

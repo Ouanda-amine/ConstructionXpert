@@ -10,6 +10,102 @@
 <head>
     <title>Title</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .btn {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+        .navbar h1 {
+            font-size: 24px;
+        }
+
+        .container {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        @media only screen and (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .card-title {
+                font-size: 20px;
+            }
+
+            .btn {
+                font-size: 14px;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .navbar h1 {
+                font-size: 20px;
+            }
+
+            .row {
+                justify-content: center;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            h1 {
+                font-size: 22px;
+            }
+
+            .card-title {
+                font-size: 18px;
+            }
+
+            .btn {
+                font-size: 12px;
+                padding: 8px 16px;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            .navbar h1 {
+                font-size: 18px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .card-body {
+                padding: 15px;
+            }
+        }
+    </style>
+
 
 </head>
 <body>

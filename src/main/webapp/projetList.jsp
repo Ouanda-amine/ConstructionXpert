@@ -14,10 +14,9 @@
 
 </head>
 <style>
-    /* Default styles */
 
 
-    /* Media Query for Tablets (screens up to 768px) */
+
     @media only screen and (max-width: 768px) {
         .container {
             width: 100%;
@@ -39,19 +38,18 @@
         }
 
         .btn {
-            width: 50%; /* Make buttons full width for better usability */
+            width: 50%;
             margin: 5px 0;
         }
     }
 
-    /* Media Query for Mobile (screens up to 480px) */
     @media only screen and (max-width: 480px) {
         h1 {
             font-size: 18px;
         }
 
         .card-body {
-            width: 100%; /* Full-width on small devices */
+            width: 100%;
             margin-bottom: 20px;
         }
 

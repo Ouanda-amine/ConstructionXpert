@@ -11,6 +11,60 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
     <title>Title</title>
+    <style>
+        @media (max-width: 576px) {
+            body {
+                font-size: 14px;
+            }
+            .container {
+                padding: 10px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            .form-group input, button {
+                font-size: 14px;
+            }
+            button {
+                padding: 8px 12px;
+            }
+        }
+
+        @media (min-width: 577px) and (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+            .container {
+                padding: 20px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+            .form-group input, button {
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width: 769px) {
+            body {
+                font-size: 18px;
+            }
+            .container {
+                margin: auto;
+                max-width: 700px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            .form-group input, button {
+                font-size: 18px;
+            }
+            button {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+
 </head>
 <body>
 <div class="container mt-5">

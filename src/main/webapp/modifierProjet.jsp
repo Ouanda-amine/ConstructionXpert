@@ -10,11 +10,68 @@
 <head>
     <title>Title</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @media (max-width: 576px) {
+            body {
+                font-size: 14px;
+            }
+            .container {
+                margin: 0 10px;
+            }
+            .form-group input {
+                font-size: 14px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            button {
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width: 577px) and (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+            .container {
+                margin: 0 20px;
+            }
+            .form-group input {
+                font-size: 16px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+            button {
+                font-size: 18px;
+            }
+        }
+
+        @media (min-width: 769px) {
+            body {
+                font-size: 18px;
+            }
+            .container {
+                margin: auto;
+                max-width: 600px;
+            }
+            .form-group input {
+                font-size: 18px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            button {
+                font-size: 20px;
+            }
+        }
+    </style>
+
 
 </head>
 <body>
 <div class="container mt-5">
-    <h2 class="text-center mb-4">Update Student</h2>
+    <h2 class="text-center mb-4">Update Project</h2>
 
     <%
         Projet projet = (Projet) request.getAttribute("projet");
